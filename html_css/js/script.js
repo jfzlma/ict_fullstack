@@ -7,6 +7,10 @@ function Read() {
     console.log(admission);
     var age = document.getElementById("getAge").value;
     console.log(age);
+    var op = document.getElementById("district");
+    var dist = op.options[op.selectedIndex].value;
+    console.log(dist);
+
 
     if(age>=18)
     {
@@ -17,5 +21,7 @@ function Read() {
         console.log("You are Not Eligible")
         alert("You are Not Eligible")
     }
+
+    
 
 }
