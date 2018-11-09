@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="col sm-6">
+        <div class="col-sm-6">
             <form>
                 <br>
                 <div class="row">
@@ -37,10 +37,16 @@
 
                 <div class="row">
                     <div class="col-sm-4"></div>
-                    <div class="col-sm-4"><button class="btn btn-info" onclick="larg();"> Largest </button> </div>
-                    <div class="col-sm-4"><button class="btn btn-info" onclick="small();"> Smallest </button> </div>
+                    <div class="col-sm-4"><button type="button" class="btn btn-info" onclick="larg();"> Largest </button> </div>
+                    <div class="col-sm-4"><button type="button" class="btn btn-info" onclick="small();"> Smallest </button> </div>
                 </div>
                 <br>
+
+                <div class="row">
+                    <div class="col-sm-6"></div>
+                    <div class="col-sm-6"> <p id="result"> </p> </div>
+
+                </div>
                 
             </form>
         </div>

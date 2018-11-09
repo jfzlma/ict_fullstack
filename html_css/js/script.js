@@ -15,11 +15,11 @@ function Read() {
     if(age>=18)
     {
         console.log("You are Eligible")
-        alert("You are Eligible")
+        //alert("You are Eligible")
     }
     else{
         console.log("You are Not Eligible")
-        alert("You are Not Eligible")
+       // alert("You are Not Eligible")
     }
 
     

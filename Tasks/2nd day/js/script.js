@@ -8,21 +8,30 @@ function larg() {
 
     if( x>y) {
         if(x>z) {
+            var res=x;
             console.log(x + "is largest");
         }
         else {
             console.log(z);
+            var res=z;
         }
     }
     else {
         if(y>z){
             console.log(y);
+            var res=y;
         }
         else{
             console.log(z);
+            var res=z;
         }
     }
+    document.getElementById("result").innerHTML=res;
 }
+
+
+
+
 
 function small() {
     var num1 = document.getElementById("num1").value;
@@ -35,20 +44,29 @@ function small() {
     if( x<y) {
         if(x<z) {
             console.log(x + "is largest");
+            var res=x;
         }
         else {
             console.log(z);
+            var res=z;
         }
     }
     else {
         if(y<z){
             console.log(y);
+            var res=y;
         }
         else{
             console.log(z);
+            var res=z;
         }
     }
+    document.getElementById("result").innerHTML= "<table class='table'> <tr><td> Result is : </td> <td>" +res+ " </td></tr></table>"   
 }
+
+
+
+
 
 function read() {
     var num1 = document.getElementById("op1").value;

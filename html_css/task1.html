@@ -23,12 +23,15 @@
 <body>
     <div class="container">
     <div class="jumbotron ">
-        <h2 > ICTA CALICUT</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi hic ea sunt veniam, quaerat nulla quo possimus quos at ad harum voluptas quae inventore est temporibus voluptate nesciunt labore.</p>
+        <h2> Registration </h2>
+        <!--p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt modi hic ea sunt veniam, quaerat nulla quo possimus quos at ad harum voluptas quae inventore est temporibus voluptate nesciunt labore.</p-->
         
     </div>
 
-
+        <br>
+        <br>
+        <br>
+        <br>
         <div class="row">
             <div class="col-sm-6">
                 <form>
@@ -46,15 +49,20 @@
                                    <br>
                                     <div class="row">
                                             <div class="col-sm-6">Admission Number</div>
-                                            <div class="col-sm-6"><input type="text" class="form-control" id="getAdmission"></div>
+                                            <div class="col-sm-6"><input type="text" class="form-control" id="getAdmission" required></div>
                                     </div>
                                    <br>
                                     <div class="row">
                                         <div class="col-sm-6">Age</div>
-                                        <div class="col-sm-6"><input type ="text" class = "form-control" id = "getAge"></div>
+                                        <div class="col-sm-6"><input type ="text" class = "form-control" id = "getAge" required></div>
                                     </div>
                                     <br>
 
+                                    <div class="row">
+                                        <div class="col-sm-6">Mobile Number</div>
+                                        <div class="col-sm-6"><input type="text" class="form-control" id="getMob" pattern="[9876]{1}[0-9]{9}" required /> </div>
+                                    </div>
+                                    <br>
                                     <div class="row">
                                         <div class="col-sm-6">District</div>
                                         <div class="col-sm-6">

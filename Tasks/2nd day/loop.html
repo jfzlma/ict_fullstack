@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+function forloop() {   
+for(i=0;i<10;i++){
+    console.log("India"+i);
+    }
+}
+
+function whileloop() {
+var i=1;
+while(i<=10)
+ {
+     console.log(i);
+     i++;
+ }
+}
+
+function breakcheck() {
+    var i=0;
+    while(i<10) {
+        if(i==6){
+            break;
+        }
+        else{
+            console.log(i);
+        }
+        i++;
+    }
+}
+
+function continuecheck() {
+    var i=0;
+    while(i<10) {
+        if(i==6) {
+            i++;
+            continue;
+            
+        }
+        else{
+            console.log(i);
+            i++;
+        }
+        
+    }
+}
+</script>
+
+<body>
+    <br>
+    <br>
+<div class="container">
+        <div class="row">
+                <div class="col-sm-3"> <button class="btn btn-info" onclick="forloop();"> For Loop </button> </div>
+                <div class="col-sm-3"> <button class="btn btn-info" onclick="whileloop();"> While Loop </button> </div>
+                <div class="col-sm-3"> <button class="btn btn-info" onclick="breakcheck();"> Break While Loop </button> </div>
+                <div class="col-sm-3"> <button class="btn btn-info" onclick="continuecheck();"> Continue While Loop </button> </div>
+            </div>
+</div>
+    
+</body>
+</html>
