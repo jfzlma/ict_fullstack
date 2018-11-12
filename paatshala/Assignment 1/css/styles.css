@@ -1,0 +1,27 @@
+.hd-lft {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: center;
+    font-size : 30px ;
+}
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+.crse{
+   
+    text-align: center;
+    margin-top: 3%;
+}
+.head{
+    margin-top:10px;
+}
+
+.cent-text{
+    text-align:  justify;;
+}
+
+.para{
+    padding-left:5em;
+}

@@ -1,0 +1,8 @@
+myTuple = ("Vivek", "Abvde", "Efghijk", "Dfdgfg")
+secTup = ("Wxyz")
+print(myTuple)
+print(myTuple[1])
+print(myTuple[1:4])
+print(myTuple[3:])
+#print(myTuple*3)
+print(secTup+" "+myTuple)
