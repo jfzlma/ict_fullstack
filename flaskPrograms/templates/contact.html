@@ -1,0 +1,52 @@
+{% extends 'layouts.html' %}
+
+{% block myContent %}
+<br>
+
+<h1> <center>ICT Academy of Kerala</center>  </h1>
+<br>
+<br>
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6">
+        
+        <div class="jumbotron" >
+
+                <form method="POST" action="/send" >
+                        <div class="row">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-10"><input type="text" name="name" class="form-control" placeholder="Name" required> </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                                <div class="col-sm-1"></div>
+                            <div class="col-sm-10"><input type="text" name="mobile" class="form-control" placeholder="Mobile Number" > </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                                <div class="col-sm-1"></div>
+                            <div class="col-sm-10"><input type="email" name="email" class="form-control" placeholder="Email" required> </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                                <div class="col-sm-1"></div>
+                            <div class="col-sm-10"> <input type="text" name="subject" class="form-control" placeholder="Subject" required> </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                                <div class="col-sm-1"></div>
+                            <div class="col-sm-10"> <textarea placeholder="Enter Message" name="message" class="form-control" rows="3" placeholder="Enter Message" required></textarea></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-5"></div>
+                            <div class="col-sm-2"><button type="submit" class="btn btn-info">Contact</button></div>
+                        </div>
+                    </form>
+
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
