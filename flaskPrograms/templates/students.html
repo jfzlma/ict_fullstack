@@ -1,0 +1,35 @@
+{% extends 'layouts.html' %}
+
+{% block myContent %}
+
+<h2> ICT Students at Calicut</h1>
+
+{% for students in myStudentList %}
+
+<div class="card">
+
+        <ul class="list-group" >
+                <li class="list-group-item active" > Id &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp; {{students.id}} </li>
+                <li class="list-group-item" >Name&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{students.name}} </li>
+                <li class="list-group-item" >Place&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{students.place}} </li>
+                <li class="list-group-item" >Mobile&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{students.mob}} </li>
+                <li class="list-group-item" >Email&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{students.email}} </li>
+                <li class="list-group-item" >Date of Joining&nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;{{students.doj}} </li>
+            </ul>
+            
+</div>
+
+<!-- <div class="col-sm-2"></div>
+<div class="col-sm-8">
+    <div class="row">
+        <div class="col-sm-6">Id:</div>
+        <div class="col-sm-6">
+            <input type="text" class="form-control" readonly placeholder="{{students.id}}" > 
+        </div>
+    </div>
+</div> -->
+
+
+{% endfor %}
+
+{% endblock %}

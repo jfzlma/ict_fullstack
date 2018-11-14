@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request
+from bindData import Students
 
 
 app=Flask(__name__)
 
-@app.route('/')
-def hello():
-    return 'Hello World'
 
-@app.route('/home')
+getStudents = Students()
+
+@app.route('/')
 def home():
     return render_template('home.html')
 
@@ -18,6 +18,10 @@ def about():
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/students')
+def students():
+    return render_template('students.html', myStudentList=getStudents)
 
 @app.route('/send', methods=['GET', 'POST'])
 def send():

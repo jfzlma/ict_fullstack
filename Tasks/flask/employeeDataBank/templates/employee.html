@@ -1,0 +1,69 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+
+<br>
+<br>
+<h2>Employee Details</h2>
+<br>
+
+<table class="table table-striped table-bordered">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Name</th>
+            <th scope="col">Department</th>
+            <th scope="col">Salary</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Email</th>
+            <th scope="col">Date of Joining</th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        {% for emp in empList %}
+        <tr>
+            <th scope="row>">{{emp.id}}</th>
+            <td>{{emp.name}}</td>
+            <td> {{emp.dep}} </td>
+            <td> {{emp.salary}} </td>
+            <td> {{emp.mob}}  </td>
+            <td> {{emp.email}} </td>
+            <td> {{emp.doj}} </td>
+        </tr>
+
+        {% endfor %}
+    </tbody>
+</table>
+
+
+
+
+
+<!-- {% for emp in empList %}
+<ul class="list-group">
+    <li class="list-group-item active">Id : {{emp.id}} </li>
+    <li class="list-group-item">Name : {{emp.name}} </li>
+    <li class="list-group-item">Department : {{emp.dep}} </li>
+    <li class="list-group-item">Date of Joining : {{emp.doj}} </li>
+    <li class="list-group-item">Mobile : {{emp.mob}} </li>
+    <li class="list-group-item">Email :  {{emp.email}} </li>
+</ul> -->
+
+
+<!-- <div class="row">
+    <div class="row">
+        <div class="col-sm-6">Name :</div>
+        <div class="col-sm-6"> <input type="text" placeholder={{emp.name}} class="form-control" readonly> </div>
+    </div>
+</div> -->
+
+
+
+
+<!-- 
+{% endfor %} -->
+
+{% endblock %}

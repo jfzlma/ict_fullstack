@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>College of Engineering </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="jumbotron">
+            <img src="images/Engineering.jpeg" height="100cm"/>
+            
+            <label><h2>College of Engineering</h2></label><br>
+            <p></p>
+            <br>
+        </div>
+            
+                    <form class="form form-group" name="form" method="POST" action="/send">
+                            <div class="row">
+                                    <div class="col-sm-6">
+                        <label><h4>Name</h4></label>
+                        <input type="text" class="form-control" id="get_name" placeholder="Full Name" name="name"/>
+                        <br>
+                        </div>
+                        <div class="col-sm-6">
+
+                                <label><h4>Register Number</h4></label>
+                                <input type="number" class="form-control" id="get_reg_no" placeholder="Register Number" name="get_reg_no"/>
+                                <br>
+                        </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+
+                            
+
+                               
+                                    <label><h4>Semester</h4></label>
+                                    
+                                    <select id="get_sem" name="get_sem">
+                                        <option value="1">Semester 1</option>
+                                        <option value="2">Semester 2</option>
+                                        <option value="3">Semester 3</option>
+                                        <option value="4">Semester 4</option>
+                                        <option value="5">Semester 5</option>
+                                        <option value="6">Semester 6</option>
+                                        <option value="7">Semester 7</option>
+                                        <option value="8">Semester 8</option>
+            
+                                    </select>
+                                
+                                
+                            </div>
+
+                            <div class="col-sm-6">
+                                <label ><h4></h4></label>
+                            </div>
+                        </div>
+                        <hr>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label ><h4>Subject One Name</h4></label>
+                                <input type="text" class="form-control" id="sub1_name" name="sub1_name" placeholder="Subject Name"/>
+                            </div>
+                            <div class="col-sm-6">
+                                    <label ><h4>Subject Mark</h4></label>
+                                    <input type="number" class="form-control" id="sub1_mark" name="sub1_mark" placeholder="Subject One Mark"/>
+                            </div>
+
+
+                        </div>
+                        <br>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                    <label ><h4>Subject One Total mark</h4></label>
+                                    <input type="number" class="form-control" id="sub1_total_mark" name="sub1_total_mark" placeholder="Subject One Total Mark"/>
+                            </div>
+                            
+                            <div class="col-sm-6"></div>
+                        </div>
+                        <br>
+                        <hr>
+                        <br>
+
+                        <div class="row">
+                                <div class="col-sm-6">
+                                    <label ><h4>Subject Two Name</h4></label>
+                                    <input type="text" class="form-control" id="sub2_name" name="sub2_name" placeholder="Subject Name"/>
+                                </div>
+                                <div class="col-sm-6">
+                                        <label ><h4>Subject Two Mark</h4></label>
+                                        <input type="number" class="form-control" id="sub2_mark" name="sub2_mark" placeholder="Subject Two Mark"/>
+                                </div>
+    
+    
+                            </div>
+                            <br>
+                           
+    
+                            <div class="row">
+                                <div class="col-sm-6">
+                                        <label ><h4>Subject Two Total mark</h4></label>
+                                        <input type="number" class="form-control" id="sub2_total_mark" name="sub2_total_mark" placeholder="Subject Two Total Mark"/>
+                                </div>
+                                <div class="col-sm-6"></div>
+                            </div>
+                            <br>
+                            <hr>
+                            <br>
+                        <div class="row">
+                                <div class="col-sm-6">
+                                    <label ><h4>Subject Three Name</h4></label>
+                                    <input type="text" class="form-control" id="sub3_name"  name="sub3_name" placeholder="Subject Name"/>
+                                </div>
+                                <div class="col-sm-6">
+                                        <label ><h4>Subject Three Mark</h4></label>
+                                        <input type="number" class="form-control" id="sub3_mark" name="sub3_mark" placeholder="Subject Three Mark"/>
+                                </div>
+    
+    
+                            </div>
+                            <br>
+                           
+    
+                            <div class="row">
+                                <div class="col-sm-6">
+                                        <label ><h4>Subject Three Total mark</h4></label>
+                                        <input type="number" class="form-control" id="sub3_tatal_mark" name="sub3_total_mark" placeholder="Subject Three Total Mark"/>
+                                </div>
+                                <div class="col-sm-6"></div>
+                            </div>
+                            <br>
+
+                            <hr>
+
+                            <br>
+                            
+                        <div class="row">
+                                <div class="col-sm-6">
+                                    <label ><h4>Subject Four Name</h4></label>
+                                    <input type="text" class="form-control" id="sub4_name" name="sub4_name" placeholder="Subject Name"/>
+                                </div>
+                                <div class="col-sm-6">
+                                        <label ><h4>Subject Four Mark</h4></label>
+                                        <input type="number" class="form-control" id="sub4_mark" name="sub4_mark" placeholder="Subject Four Mark"/>
+                                </div>
+    
+    
+                            </div>
+                            <br>
+                           
+    
+                            <div class="row">
+                                <div class="col-sm-6">
+                                        <label ><h4>Subject Four Total mark</h4></label>
+                                        <input type="number" class="form-control" id="sub4_total_mark" name="sub4_total_mark" placeholder="Subject Four Total Mark"/>
+                                </div>
+                                <div class="col-sm-6"></div>
+                            </div>
+                            <br>
+                            <hr>
+                            <br>
+                            
+
+
+
+                            <button type="submit" class="btn btn-success">Submit</button>
+                       
+                    </form>
+                
+            </div>
+            
+        </div>
+        <br>
+
+    </div>
+</body>
+</html>
