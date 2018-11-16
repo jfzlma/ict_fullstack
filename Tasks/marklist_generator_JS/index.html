@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <title>Marklist Generator</title>
+</head>
+<body>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Marklist Generator</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a> </li>
+            </ul>
+        </nav>
+        <br>
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron-fluid">
+                    <h class="display-1"> <center> Mark List Generator </center></h>
+                    
+            </div>
+            <div class="row">
+               <div class="col-sm-6">
+                    <div class="jumbotron">
+                            <div class="row my-row">
+                                    <div class="col-sm-4"> <label for="name" >Name</label> </div>
+                                    <div class="col-sm-8"> <input type="text" class="form-control" id="name" required> </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-4"> <label for="registerNumber">Register Number</label> </div>
+                                <div class="col-sm-8"> <input type="text" required class="form-control" id="regNum" required> </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-4"><label for="name">Semester</label></div>
+                                <div class="col-sm-8">
+                                        <select class="form-control" id="sem" required>
+                                                <option>Select Semester</option>
+                                                <option value="s1"> S1 </option>
+                                                <option value="s2"> S2 </option>
+                                                <option value="s3"> S3 </option>
+                                                <option value="s4"> S4 </option>
+                                                <option value="s5"> S5 </option>
+                                                <option value="s6"> S6 </option>
+                                                <option value="s7"> S7 </option>
+                                                <option value="s8"> S8 </option>
+                                        </select>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-6"> <label for="subject"> <p class="h5"> Subject 1</p> </label> </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                    <div class="col-sm-4"> <label for="sub1">Name</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="sub1"> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4"> <label for="mark1">Mark</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="mark1"> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4"> <label for="total1">Total Mark</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="total1"> </div>
+                                </div>
+                                <br>
+                            <div class="row">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-6"> <label for="subject"> <p class="h5"> Subject 2</p> </label> </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                    <div class="col-sm-4"> <label for="sub2">Name</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="sub2"> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4"> <label for="mark2">Mark</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="mark2"> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4"> <label for="total2">Total Mark</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="total2"> </div>
+                                </div>
+                                <br>
+                            <div class="row">
+                                <div class="col-sm-6"></div>
+                                <div class="col-sm-6"> <label for="subject"> <p class="h5"> Subject 3</p> </label> </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                    <div class="col-sm-4"> <label for="sub3">Name</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="sub3"> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4"> <label for="mark3">Mark</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="mark3"> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-4"> <label for="total3">Total Mark</label> </div>
+                                    <div class="col-sm-8"> <input type="text" required class="form-control" id="total3"> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-6"></div>
+                                    <div class="col-sm-6"> <label for="subject"> <p class="h5"> Subject 4</p> </label> </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                        <div class="col-sm-4"> <label for="sub4">Name</label> </div>
+                                        <div class="col-sm-8"> <input type="text" required class="form-control" id="sub4"> </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-4"> <label for="mark4">Mark</label> </div>
+                                        <div class="col-sm-8"> <input type="text" required class="form-control" id="mark4"> </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-sm-4"> <label for="total4">Total Mark</label> </div>
+                                        <div class="col-sm-8"> <input type="text" required class="form-control" id="total4"> </div>
+                                    </div>
+                                <br>
+                                <br>
+                                <div class="row">
+                                      <div class="col-sm-6"></div>
+                                      <div class="col-sm-6">   <button class="btn btn-info" type="submit" onclick="generate();">Generate</button></div>
+                                </div>
+                    </div>
+
+                </div>
+                <div class="col-sm-6">
+                    <div class="jumbotron">
+                        <div class="row">
+                            <div class="col-sm-6"> <p class="h5"> Name </p></div>
+                            <div class="col-sm-6"> <p class="h5" id="getName"></p> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6"><p class="h5">Register Number</p></div>
+                            <div class="col-sm-6"> <p class="h5" id="getRegNum"></p> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6"><p class="h5">Semester</p></div>
+                            <div class="col-sm-6"><p class="h5" id="getSem"></p></div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Sl.No</th>
+                                        <th scope="col">Subject</th>
+                                        <th scope="col">Mark</th>
+                                        <th scope="col">Total Mark</th>
+                                        <th scope="col">Grade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <th scope="row">1</th>
+                                                <td id="getSub1"></td>
+                                                <td id="getMark1"></td>
+                                                <td id="getTotal1"></td>
+                                                <td id="getGra1"></td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">2</th>
+                                                <td id="getSub2"></td>
+                                                <td id="getMark2"></td>
+                                                <td id="getTotal2"></td>
+                                                <td id="getGra2"></td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">3</th>
+                                                <td id="getSub3"></td>
+                                                <td id="getMark3"></td>
+                                                <td id="getTotal3"></td>
+                                                <td id="getGra3"></td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">4</th>
+                                                <td id="getSub4"></td>
+                                                <td id="getMark4"></td>
+                                                <td id="getTotal4"></td>
+                                                <td id="getGra4"></td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                            <div class="row">
+                                <div class="col-sm-6"> <p class="h5">Status </p> </div>
+                                <div class="col-sm-6"><p class="h5" id="getStatus"></p></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <footer class="footer">
+            <div class="container">
+                <div class="jumbotron">
+                        <p class="h5"> <center>Created By <a href="mailto:jfzlma@gmail.com">Jafsal M A </a></center> </p>
+            
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
