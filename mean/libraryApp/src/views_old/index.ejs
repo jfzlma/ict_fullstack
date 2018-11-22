@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="/js/bootstrap.min.js" ></script>
+    <script src="/js/jquery.min.js" ></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+      <div class="container"> <h1>  <center> Welcome</center> </h1>  </div>
+      <div class="jumbotron">  <p class="h1"> Serving index page </p>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus molestiae natus neque pariatur incidunt ut odio voluptatibus itaque voluptas, suscipit dolorem fuga architecto tempora corporis a officia dolorum exercitationem non?</p>
+      </div>
+    
+    <div class="container"> 
+      <div class="jumbotron">  
+      Welcome to <%=title%>
+
+    <ul>
+            <% for(var i=0; i<list.length; i++) { %>
+                <li> <%=list[i] %> </li>
+             <% } %>
+
+
+        
+    </ul>
+
+
+    </div>
+    </div>
+
+</body>
+</html>
